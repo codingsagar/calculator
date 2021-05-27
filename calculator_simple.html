@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Calculator</title>
+	<style>
+		* {
+			padding: 0;
+			margin: 0;
+			box-sizing: border-box;
+		}
+
+		button {
+			font-size: 20px;
+			padding: 5px 7px;
+			margin: 5px;
+			width: 65px;
+		}
+
+		input {
+			width: 250px;
+			height: 15vh;
+			font-size: 19px;
+			padding: 5px;
+			border: 1px solid black;
+			border-radius: 5px;
+			margin: 20px 0;
+			font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+		}
+
+		.main {
+			display: grid;
+			height: 100vh;
+			place-content: center;
+			background-color: #1a1d3a;
+		}
+
+		.main-2 {
+			display: flex;
+			flex-direction: column;
+			height: 80vh;
+			justify-content: center;
+			align-items: center;
+			background-color: chartreuse;
+			border-radius: 10px;
+			padding: 0 10px;
+			border: 1px solid black;
+		}
+
+		.box-1 {
+			text-align: center;
+		}
+
+		.box-1 h2 {
+			text-align: center;
+			font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+			padding: 8px;
+		}
+
+		.btns {
+			display: flex;
+			width: 320px;
+			justify-content: center;
+			flex-wrap: wrap;
+			text-align: center;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="main">
+		<div class="main-2">
+
+			<div class="box-1">
+
+				<h2>Let's Calculate</h2>
+				<input type="text" name="" id="result" placeholder="Calculate something ☹" readonly />
+			</div>
+			<div class="btns">
+				<button id="btn-1">1</button>
+				<button id="btn-2">2</button>
+				<button id="btn-3">3</button>
+				<button id="btn-4">4</button>
+				<button id="btn-5">5</button>
+				<button id="btn-6">6</button>
+				<button id="btn-7">7</button>
+				<button id="btn-8">8</button>
+				<button id="btn-9">9</button>
+				<button id="btn-0">0</button>
+				<button id="btn-plus">+</button>
+				<button id="btn-minus">-</button>
+				<button id="btn-multiply">*</button>
+				<button id="btn-divide">/</button>
+				<button id="btn-backclr">⬅</button>
+				<button id="btn-equalto">=</button>
+				<button id="btn-clear">Clear</button>
+			</div>
+
+		</div>
+	</div>
+
+	<script>
+		var result = document.getElementById("result");
+		var one = document.getElementById("btn-1");
+		var two = document.getElementById("btn-2");
+		var three = document.getElementById("btn-3");
+		var four = document.getElementById("btn-4");
+		var five = document.getElementById("btn-5");
+		var six = document.getElementById("btn-6");
+		var seven = document.getElementById("btn-7");
+		var eight = document.getElementById("btn-8");
+		var nine = document.getElementById("btn-9");
+		var zero = document.getElementById("btn-0");
+		var equalTo = document.getElementById("btn-equalto");
+		var plus = document.getElementById("btn-plus");
+		var minus = document.getElementById("btn-minus");
+		var multiply = document.getElementById("btn-multiply");
+		var divide = document.getElementById("btn-divide");
+		var backclr = document.getElementById("btn-backclr");
+		var clear = document.getElementById("btn-clear");
+
+		one.addEventListener("click", () => {
+			var content = result.value;
+			if (content.length < 15) {
+				result.value += 1;
+			}
+			else {
+				alert("Max Length is 15 😶");
+			}
+		});
+		two.addEventListener("click", () => {
+			var content = result.value;
+			if (content.length < 15) {
+				result.value += 2;
+			}
+			else {
+				alert("Max Length is 15 😶");
+			}
+		});
+		three.addEventListener("click", () => {
+			var content = result.value;
+			if (content.length < 15) {
+				result.value += 3;
+			}
+			else {
+				alert("Max Length is 15 😶");
+			}
+		});
+		four.addEventListener("click", () => {
+			var content = result.value;
+			if (content.length < 15) {
+				result.value += 4;
+			}
+			else {
+				alert("Max Length is 15 😶");
+			}
+		});
+		five.addEventListener("click", () => {
+			var content = result.value;
+			if (content.length < 15) {
+				result.value += 5;
+			}
+			else {
+				alert("Max Length is 15 😶");
+			}
+		});
+		six.addEventListener("click", () => {
+			var content = result.value;
+			if (content.length < 15) {
+				result.value += 6;
+			}
+			else {
+				alert("Max Length is 15 😶");
+			}
+		});
+		seven.addEventListener("click", () => {
+			var content = result.value;
+			if (content.length < 15) {
+				result.value += 7;
+			}
+			else {
+				alert("Max Length is 15 😶");
+			}
+		});
+		eight.addEventListener("click", () => {
+			var content = result.value;
+			if (content.length < 15) {
+				result.value += 8;
+			}
+			else {
+				alert("Max Length is 15 😶");
+			}
+		});
+		nine.addEventListener("click", () => {
+			var content = result.value;
+			if (content.length < 15) {
+				result.value += 9;
+			}
+			else {
+				alert("Max Length is 15 😶");
+			}
+		});
+		zero.addEventListener("click", () => {
+			var content = result.value;
+			if (content.length < 15) {
+				result.value += 0;
+			}
+			else {
+				alert("Max Length is 15 😶");
+			}
+		});
+		plus.addEventListener("click", () => {
+			var content = result.value;
+			if (content.length < 15) {
+				result.value += "+";
+			}
+			else {
+				alert("Max Length is 15 😶");
+			}
+		});
+		minus.addEventListener("click", () => {
+			var content = result.value;
+			if (content.length < 15) {
+				result.value += "-";
+			}
+			else {
+				alert("Max Length is 15 😶");
+			}
+		});
+		multiply.addEventListener("click", () => {
+			var content = result.value;
+			if (content.length < 15) {
+				result.value += "*";
+			}
+			else {
+				alert("Max Length is 15 😶");
+			}
+		});
+		divide.addEventListener("click", () => {
+			var content = result.value;
+			if (content.length < 15) {
+				result.value += "/";
+			}
+			else {
+				alert("Max Length is 15 !! 😶");
+			}
+		});
+		backclr.addEventListener("click", () => {
+			var content = result.value;
+			if (content.length > 0) {
+				var newValue = content.slice(0, content.length - 1);
+				result.value = newValue;
+			}
+			else {
+				alert("You have entered nothing !!😶");
+			}
+		});
+		clear.addEventListener("click", () => {
+			var content = result.value;
+			if (content.length > 0) {
+				result.value = "";
+				result.style.color = "#000000";
+
+			}
+			else {
+				alert("Nothing to clear !! 😑")
+			}
+		});
+		equalTo.addEventListener("click", () => {
+			var content = result.value;
+			if (content.length > 2) {
+				if (content.includes("++") || content.includes("--") || content.includes("**") || content.includes("//")) {
+					alert("Something wrong with your input!! 🤐");
+				}
+				else {
+					var calculatedValue = eval(content);
+					result.value = calculatedValue;
+					console.log(calculatedValue);
+					result.style.color = "#333333";
+				}
+			}
+			else {
+				alert("Please enter correctly !! 😶");
+			}
+		});
+	</script>
+</body>
+
+</html>
