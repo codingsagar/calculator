@@ -126,6 +126,7 @@
 		var allbtns = document.getElementsByTagName("button");
 			for (let i = 0; i < allbtns.length; i++) {
 				allbtns[i].addEventListener("click",()=>{
+					btnSound.currentTime = 0;
 					btnSound.play();
 				})
 			}
