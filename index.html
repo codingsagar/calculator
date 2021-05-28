@@ -72,6 +72,7 @@
 
 <body>
 	<div class="main">
+		<audio src="btn_sound.wav"></audio>
 		<div class="main-2">
 
 			<div class="box-1">
@@ -121,6 +122,13 @@
 		var divide = document.getElementById("btn-divide");
 		var backclr = document.getElementById("btn-backclr");
 		var clear = document.getElementById("btn-clear");
+		var btnSound = document.getElementById("sound");
+		var allbtns = document.getElementsByTagName("button");
+			for (let i = 0; i < allbtns.length; i++) {
+				allbtns[i].addEventListener("click",()=>{
+					btnSound.play();
+				})
+			}
 
 		one.addEventListener("click", () => {
 			var content = result.value;
