@@ -91,6 +91,7 @@
 				<button id="btn-8">8</button>
 				<button id="btn-9">9</button>
 				<button id="btn-0">0</button>
+				<button id="btn-dot">.</button>
 				<button id="btn-plus">+</button>
 				<button id="btn-minus">-</button>
 				<button id="btn-multiply">*</button>
@@ -122,6 +123,7 @@
 		var divide = document.getElementById("btn-divide");
 		var backclr = document.getElementById("btn-backclr");
 		var clear = document.getElementById("btn-clear");
+		var dot = document.getElementById("btn-dot");
 		var btnSound = document.getElementById("sound");
 		var allbtns = document.getElementsByTagName("button");
 			for (let i = 0; i < allbtns.length; i++) {
@@ -216,6 +218,15 @@
 			var content = result.value;
 			if (content.length < 15) {
 				result.value += 0;
+			}
+			else {
+				alert("Max Length is 15 😶");
+			}
+		});
+		dot.addEventListener("click", () => {
+			var content = result.value;
+			if (content.length < 15) {
+				result.value += '.';
 			}
 			else {
 				alert("Max Length is 15 😶");
